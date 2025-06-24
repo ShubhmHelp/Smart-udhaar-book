@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="hi">
+<!DOCTYPE html><html lang="hi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -49,57 +48,77 @@
       font-weight: bold;
       color: #005f73;
     }
+    textarea {
+      width: 100%;
+      height: 150px;
+      margin-top: 1rem;
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
   </style>
 </head>
-<body>
-
-  <header>
+<body>  <header>
     <h1>Smart Udhaar Book</h1>
     <p>App Idea by 13-year-old Student – Shubham Yadav</p>
-  </header>
-
-  <section>
+  </header>  <section>
     <h2>परिचय / Introduction</h2>
     <div class="highlight">
       मैं शुभम यादव, उत्तर प्रदेश के बलिया जिले के एक छोटे से गाँव से 13 वर्षीय छात्र हूँ।
       मैंने एक मोबाइल ऐप का आइडिया बनाया है – <strong>Smart Udhaar Book</strong> – जो गांवों के दुकानदारों को डिजिटल तरीके से उधारी रिकॉर्ड रखने में मदद करेगा।
-    </div>
+    </div><img src="shubham-photo.png" alt="Shubham Yadav" />
 
-    <img src="shubham-photo.png" alt="Shubham Yadav" />
+<h2>फीचर्स / Features</h2>
+<ul>
+  <li>दुकान और ग्राहक की फोटो के साथ उधारी रिकॉर्ड</li>
+  <li>GST, रेट, मात्रा, टोटल, डिस्काउंट</li>
+  <li>SMS/WhatsApp पर डेली/मंथली रिपोर्ट</li>
+  <li>80+ भाषाओं का सपोर्ट</li>
+  <li>बिना ऐप के भी Web से चलने वाला</li>
+</ul>
 
-    <h2>फीचर्स / Features</h2>
-    <ul>
-      <li>दुकान और ग्राहक की फोटो के साथ उधारी रिकॉर्ड</li>
-      <li>GST, रेट, मात्रा, टोटल, डिस्काउंट</li>
-      <li>SMS/WhatsApp पर डेली/मंथली रिपोर्ट</li>
-      <li>80+ भाषाओं का सपोर्ट</li>
-      <li>बिना ऐप के भी Web से चलने वाला</li>
-    </ul>
+<h2>डाउनलोड / Download Pitch</h2>
+<a class="btn" href="Smart_Udhaar_Book_Government_Pitch_Bilingual.docx" download>
+  📥 Download Pitch (DOCX)
+</a>
 
-    <h2>डाउनलोड / Download Pitch</h2>
-    <a class="btn" href="Smart_Udhaar_Book_Government_Pitch_Bilingual.docx" download>
-      📥 Download Pitch (DOCX)
-    </a>
+<h2>📧 Email पर भेजें / Send Email</h2>
+<textarea id="emailText">Subject: Partnership or Purchase Inquiry – Smart Udhaar Book Idea
 
-    <h2>📧 Email पर भेजें</h2>
-    <a
-      class="btn"
-      href="mailto:indiaportal@gov.in?subject=Smart Udhaar Book Idea by Shubham&body=Namaste%20Sir/Madam%2C%0A%0AMy%20name%20is%20Shubham%20Yadav%2C%20I%20am%20a%20Class%209%20student%20from%20Ballia%2C%20UP.%20I%20have%20created%20an%20idea%20for%20a%20Digital%20Udhaar%20App%20for%20rural%20shopkeepers.%20Please%20check%20the%20attached%20pitch%20document.%20I%20hope%20to%20get%20your%20support.%0A%0AThanks%2C%0AShubham%20Yadav"
-      target="_blank"
-    >📤 Send to Government Email</a>
+Namaste Shubham Yadav ji,
 
-    <h2>📲 WhatsApp पर भेजें</h2>
-    <a
-      class="btn"
-      href="https://wa.me/916392666949?text=Namaste%20Sir%2C%20I%20am%20Shubham%20Yadav%2C%20Class%209%20student.%20I%20have%20an%20App%20idea%20for%20rural%20shopkeepers%20called%20Smart%20Udhaar%20Book.%20Please%20have%20a%20look%20at%20my%20pitch%20file."
-      target="_blank"
-    >💬 Send on WhatsApp</a>
+We are interested in your app idea “Smart Udhaar Book” for rural shopkeepers. We would like to explore possibilities to either collaborate, invest, or license the idea from you. Please contact us at the earliest.
 
-    <div class="contact">
-      📧 Email: shubhambusiness60@gmail.com<br />
-      📞 WhatsApp: +91 6392666949
-    </div>
-  </section>
+धन्यवाद।
 
+Regards, [नाम] [कंपनी या टीम का नाम] [ईमेल / फ़ोन]</textarea> <a class="btn" href="#" onclick="sendEmail()">📤 Send this Message via Email</a>
+
+<h2>📲 WhatsApp पर भेजें / Send WhatsApp</h2>
+<textarea id="waText">नमस्ते शुभम यादव जी,
+
+मैंने आपकी Smart Udhaar Book वेबसाइट देखी। हमें आपका ऐप आइडिया बहुत पसंद आया है। क्या हम कॉल या मीटिंग कर सकते हैं? धन्यवाद 🙏
+
+[नाम]
+
+[कंपनी या टीम का नाम]</textarea> <a class="btn" href="#" onclick="sendWhatsApp()">💬 Send this Message via WhatsApp</a>
+
+  <div class="contact">
+    📧 Email: shubhambusiness60@gmail.com<br />
+    📞 WhatsApp: +91 6392666949
+  </div>
+</section><script>
+  function sendEmail() {
+    const body = encodeURIComponent(document.getElementById("emailText").value);
+    const mailtoLink = `mailto:shubhambusiness60@gmail.com?subject=Smart Udhaar Book Partnership&body=${body}`;
+    window.open(mailtoLink);
+  }
+
+  function sendWhatsApp() {
+    const message = encodeURIComponent(document.getElementById("waText").value);
+    const waLink = `https://wa.me/916392666949?text=${message}`;
+    window.open(waLink);
+  }
+</script>
 </body>
 </html>
